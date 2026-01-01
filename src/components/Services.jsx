@@ -25,13 +25,13 @@ import {
 } from "lucide-react";
 
 
-import Cocina from "D:/10. Pagina web/rux-construcciones/src/assets/cocinas/CNTJ2616.png";
-import Nave from "D:/10. Pagina web/rux-construcciones/src/assets/Herreria/Nave.png";
-import PLAFON from "D:/10. Pagina web/rux-construcciones/src/assets/Tablaroca y plafones/renders.jpeg";
-import Piso from "D:/10. Pagina web/rux-construcciones/src/assets/Trabajos/PISO 2.JPG";
-import Aluminio from "D:/10. Pagina web/rux-construcciones/src/assets/Aluminio/puertas.png";
-import Marble from "D:/10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_1275.JPG";
-import WPC from "D:/10. Pagina web/rux-construcciones/src/assets/Trabajos/DECK1.jpg"
+import Cocina from "../10. Pagina web/rux-construcciones/src/assets/cocinas/CNTJ2616.png";
+import Nave from "../10. Pagina web/rux-construcciones/src/assets/Herreria/Nave.png";
+import PLAFON from "../10. Pagina web/rux-construcciones/src/assets/Tablaroca y plafones/renders.jpeg";
+import Piso from "../10. Pagina web/rux-construcciones/src/assets/Trabajos/PISO 2.JPG";
+import Aluminio from "../10. Pagina web/rux-construcciones/src/assets/Aluminio/puertas.png";
+import Marble from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_1275.JPG";
+import WPC from "../10. Pagina web/rux-construcciones/src/assets/Trabajos/DECK1.jpg"
 
 export const Services = () => {
   const ref = useRef(null);

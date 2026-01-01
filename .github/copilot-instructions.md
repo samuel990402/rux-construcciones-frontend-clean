@@ -37,7 +37,7 @@ This file gives targeted, repository-specific guidance for AI coding assistants 
 
   ```js
   // Bad — absolute Windows path
-  import proyecto1 from 'D:/10. Pagina web/rux-construcciones/src/assets/Proyectos/Encinos H.png'
+  import proyecto1 from '../10. Pagina web/rux-construcciones/src/assets/Proyectos/Encinos H.png'
 
   // Good — use alias
   import proyecto1 from '@/assets/Proyectos/Encinos H.png'

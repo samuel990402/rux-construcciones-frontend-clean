@@ -1,5 +1,5 @@
-import Logo from "D:/10. Pagina web/rux-construcciones/src/assets/Logo lateral.png";
-import QR from "D:/10. Pagina web/rux-construcciones/src/assets/Qr/Numero.jpg";
+import Logo from "../10. Pagina web/rux-construcciones/src/assets/Logo lateral.png";
+import QR from "../10. Pagina web/rux-construcciones/src/assets/Qr/Numero.jpg";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Share2 } from 'lucide-react';
