@@ -20,7 +20,7 @@ import proyecto12 from "../assets/Proyectos/7.png";
 import proyecto13 from "../assets/Proyectos/8.png";
 import proyecto14 from "../assets/Proyectos/9.png";
 import proyecto15 from "../assets/Proyectos/10.png";
-import proyecto16 from "../src/assets/Proyectos/11.png";
+import proyecto16 from "../assets/Proyectos/11.png";
 import proyecto17 from "../assets/Proyectos/12.png";
 import proyecto18 from "../assets/Proyectos/13.png";
 import proyecto19 from "../assets/Proyectos/14.png";
