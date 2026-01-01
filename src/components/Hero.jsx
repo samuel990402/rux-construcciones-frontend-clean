@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import Foto from "../10. Pagina web/rux-construcciones/src/assets/Principal 1.png";
+import Foto from "../assets/Principal 1.png";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 

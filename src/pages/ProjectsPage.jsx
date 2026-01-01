@@ -5,86 +5,86 @@ import axios from "axios";
 // Si quieres el botón flotante solo en esta página, importalo aquí.
 // Si prefieres que aparezca en todo el sitio, ponlo en App.js.
 import { WhatsAppFloating } from "../components/WhatsAppFloating"; // crea este componente si no existe
-import proyecto1 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/17.png";
-import proyecto2 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/18.png";
-import proyecto3 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/19.png";
-import proyecto4 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/21.png";
-import proyecto5 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/22.png";
-import proyecto6 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/1.png";
-import proyecto7 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/2.png";
-import proyecto8 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/3.png";
-import proyecto9 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/4.png";
-import proyecto10 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/5.png";
-import proyecto11 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/6.png";
-import proyecto12 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/7.png";
-import proyecto13 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/8.png";
-import proyecto14 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/9.png";
-import proyecto15 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/10.png";
-import proyecto16 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/11.png";
-import proyecto17 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/12.png";
-import proyecto18 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/13.png";
-import proyecto19 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/14.png";
-import proyecto20 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/15.png";
-import proyecto21 from "../10. Pagina web/rux-construcciones/src/assets/Proyectos/20.png";
-import Herrería1 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/DESCANSO.png";
-import Herrería2 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_0494.png";
-import Herrería3 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_1092.png";
-import Herrería4 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_1094.png";
-import Escalera1 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/ERPAE1942.png";
-import Escalera2 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_0884.png";
-import Escalera3 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_0954.png";
-import Escalera4 from "../10. Pagina web/rux-construcciones/src/assets/Escaleras/IMG_1003.png";
-import Bar from "../10. Pagina web/rux-construcciones/src/assets/Bar/IMG_0480.png";
-import Closet1 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_0411.JPG"
-import Closet2 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_0446.JPG"
-import Closet3 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1304.JPG"
-import Closet4 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1394.JPG"
-import Closet5 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1405.JPG"
-import Closet6 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1423.JPG"
-import Closet7 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1422.JPG"
-import Closet8 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1225.JPG"
-import Closet9 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_0522.JPG"
-import Closet10 from "../10. Pagina web/rux-construcciones/src/assets/closets/IMG_1225.JPG"
-import Closet11 from "../10. Pagina web/rux-construcciones/src/assets/closets/1cls.JPG"
-import Cocina1 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/CMCJ0195.JPG"
-import Cocina2 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/CNTJ2616.JPG"
-import Cocina3 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0386.JPG"
-import Cocina4 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0389.JPG"
-import Cocina5 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0459.JPG"
-import Cocina6 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0472.JPG"
-import Cocina7 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0576.JPG"
-import Cocina8 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_0927.JPG"
-import Cocina9 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_1197.JPG"
-import Cocina10 from "../10. Pagina web/rux-construcciones/src/assets/cocinas/IMG_1275.JPG"
-import Muebles1 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/CQIV3868.JPG"
-import Muebles2 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/HHHR6079.JPG"
-import Muebles3 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_0240.JPG"
-import Muebles4 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_0740.JPG"
-import Muebles5 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_0745.JPG"
-import Muebles6 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_0981.JPG"
-import Muebles7 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_1291.JPG"
-import Muebles8 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_1404.JPG"
-import Muebles9 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/IMG_1412.JPG"
-import Muebles10 from "../10. Pagina web/rux-construcciones/src/assets/Muebles/XRDT4350.JPG"
-import Puertas1 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/DFIV3595.JPG"
-import Puertas2 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/ELVI5952.JPG"
-import Puertas3 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/EUBB0824.JPG"
-import Puertas4 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0339.JPG"
-import Puertas5 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0327.JPG"
-import Puertas6 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0453.JPG"
-import Puertas7 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0512.JPG"
-import Puertas8 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0560.JPG"
-import Puertas9 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_0606.JPG"
-import Puertas10 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_1052.JPG"
-import Puertas11 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_1608.JPG"
-import Puertas12 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/WBMH8734.JPG"
-import Puertas13 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_1414.JPG"
-import Puertas14 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_1608.JPG"
-import Puertas15 from "../10. Pagina web/rux-construcciones/src/assets/Puertas/IMG_1231.JPG"
-import Obra1 from "../10. Pagina web/rux-construcciones/src/assets/Obras/eb68541f-ed29-45cf-bb05-f3aa27a483be.jpg"
-import Obra2 from "../10. Pagina web/rux-construcciones/src/assets/Obras/36c00236-4fc3-4909-ab6d-40bf98ebfc71.jpg"
-import Obra3 from "../10. Pagina web/rux-construcciones/src/assets/Obras/38b6f74f-4a86-459f-a8e7-1a55f67579f5.jpg"
-import Obra4 from "../10. Pagina web/rux-construcciones/src/assets/Obras/c7897203-a69d-4894-a1d5-ab2f8e60d39f.jpg"
+import proyecto1 from "../assets/Proyectos/17.png";
+import proyecto2 from "../assets/Proyectos/18.png";
+import proyecto3 from "../assets/Proyectos/19.png";
+import proyecto4 from "../assets/Proyectos/21.png";
+import proyecto5 from "../assets/Proyectos/22.png";
+import proyecto6 from "../assets/Proyectos/1.png";
+import proyecto7 from "../assets/Proyectos/2.png";
+import proyecto8 from "../assets/Proyectos/3.png";
+import proyecto9 from "../assets/Proyectos/4.png";
+import proyecto10 from "../assets/Proyectos/5.png";
+import proyecto11 from "../assets/Proyectos/6.png";
+import proyecto12 from "../assets/Proyectos/7.png";
+import proyecto13 from "../assets/Proyectos/8.png";
+import proyecto14 from "../assets/Proyectos/9.png";
+import proyecto15 from "../assets/Proyectos/10.png";
+import proyecto16 from "../src/assets/Proyectos/11.png";
+import proyecto17 from "../assets/Proyectos/12.png";
+import proyecto18 from "../assets/Proyectos/13.png";
+import proyecto19 from "../assets/Proyectos/14.png";
+import proyecto20 from "../assets/Proyectos/15.png";
+import proyecto21 from "../assets/Proyectos/20.png";
+import Herrería1 from "../assets/Escaleras/DESCANSO.png";
+import Herrería2 from "../assets/Escaleras/IMG_0494.png";
+import Herrería3 from "../assets/Escaleras/IMG_1092.png";
+import Herrería4 from "../assets/Escaleras/IMG_1094.png";
+import Escalera1 from "../assets/Escaleras/ERPAE1942.png";
+import Escalera2 from "../assets/Escaleras/IMG_0884.png";
+import Escalera3 from "../assets/Escaleras/IMG_0954.png";
+import Escalera4 from "../assets/Escaleras/IMG_1003.png";
+import Bar from "../assets/Bar/IMG_0480.png";
+import Closet1 from "../assets/closets/IMG_0411.JPG"
+import Closet2 from "../assets/closets/IMG_0446.JPG"
+import Closet3 from "../assets/closets/IMG_1304.JPG"
+import Closet4 from "../assets/closets/IMG_1394.JPG"
+import Closet5 from "../assets/closets/IMG_1405.JPG"
+import Closet6 from "../assets/closets/IMG_1423.JPG"
+import Closet7 from "../assets/closets/IMG_1422.JPG"
+import Closet8 from "../assets/closets/IMG_1225.JPG"
+import Closet9 from "../assets/closets/IMG_0522.JPG"
+import Closet10 from "../assets/closets/IMG_1225.JPG"
+import Closet11 from "../assets/closets/1cls.JPG"
+import Cocina1 from "../assets/cocinas/CMCJ0195.JPG"
+import Cocina2 from "../assets/cocinas/CNTJ2616.JPG"
+import Cocina3 from "../assets/cocinas/IMG_0386.JPG"
+import Cocina4 from "../assets/cocinas/IMG_0389.JPG"
+import Cocina5 from "../assets/cocinas/IMG_0459.JPG"
+import Cocina6 from "../assets/cocinas/IMG_0472.JPG"
+import Cocina7 from "../assets/cocinas/IMG_0576.JPG"
+import Cocina8 from "../assets/cocinas/IMG_0927.JPG"
+import Cocina9 from "../assets/cocinas/IMG_1197.JPG"
+import Cocina10 from "../assets/cocinas/IMG_1275.JPG"
+import Muebles1 from "../assets/Muebles/CQIV3868.JPG"
+import Muebles2 from "../assets/Muebles/HHHR6079.JPG"
+import Muebles3 from "../assets/Muebles/IMG_0240.JPG"
+import Muebles4 from "../assets/Muebles/IMG_0740.JPG"
+import Muebles5 from "../assets/Muebles/IMG_0745.JPG"
+import Muebles6 from "../assets/Muebles/IMG_0981.JPG"
+import Muebles7 from "../assets/Muebles/IMG_1291.JPG"
+import Muebles8 from "../assets/Muebles/IMG_1404.JPG"
+import Muebles9 from "../assets/Muebles/IMG_1412.JPG"
+import Muebles10 from "../assets/Muebles/XRDT4350.JPG"
+import Puertas1 from "../assets/Puertas/DFIV3595.JPG"
+import Puertas2 from "../assets/Puertas/ELVI5952.JPG"
+import Puertas3 from "../assets/Puertas/EUBB0824.JPG"
+import Puertas4 from "../assets/Puertas/IMG_0339.JPG"
+import Puertas5 from "../assets/Puertas/IMG_0327.JPG"
+import Puertas6 from "../assets/Puertas/IMG_0453.JPG"
+import Puertas7 from "../assets/Puertas/IMG_0512.JPG"
+import Puertas8 from "../assets/Puertas/IMG_0560.JPG"
+import Puertas9 from "../assets/Puertas/IMG_0606.JPG"
+import Puertas10 from "../assets/Puertas/IMG_1052.JPG"
+import Puertas11 from "../assets/Puertas/IMG_1608.JPG"
+import Puertas12 from "../assets/Puertas/WBMH8734.JPG"
+import Puertas13 from "../assets/Puertas/IMG_1414.JPG"
+import Puertas14 from "../assets/Puertas/IMG_1608.JPG"
+import Puertas15 from "../assets/Puertas/IMG_1231.JPG"
+import Obra1 from "../assets/Obras/eb68541f-ed29-45cf-bb05-f3aa27a483be.jpg"
+import Obra2 from "../assets/Obras/36c00236-4fc3-4909-ab6d-40bf98ebfc71.jpg"
+import Obra3 from "../assets/Obras/38b6f74f-4a86-459f-a8e7-1a55f67579f5.jpg"
+import Obra4 from "../assets/Obras/c7897203-a69d-4894-a1d5-ab2f8e60d39f.jpg"
 
 /* ===========================
    INSTRUCCIONES RÁPIDAS:

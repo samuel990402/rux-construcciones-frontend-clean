@@ -1,4 +1,4 @@
-import FOTO from "../10. Pagina web/rux-construcciones/src/assets/Gym.jpg";
+import FOTO from "../assets/Gym.jpg";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
