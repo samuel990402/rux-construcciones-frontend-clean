@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+
+  /* ❗ Espacio para que el header fijo NO tape el contenido */
+  padding-top: 96px;
+}
+
+/* subtle luxury texture (very faint) */
+body {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.01) 0px, transparent 30%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.01) 0px, transparent 30%);
+  background-color: #000;
+}
+
+/* Utility premium title line (class .title-gold-line) */
+.title-gold-line {
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+.title-gold-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: #D4AF37;
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.75);
+}
+
+/* Glow for cards/images */
+.gold-glow {
+  transition: all 0.35s ease;
+}
+.gold-glow:hover {
+  box-shadow: 0 6px 30px rgba(212, 175, 55, 0.18), 0 0 18px rgba(212,175,55,0.12);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* premium button border animation helper */
+.group:hover .gold-border-animate {
+  animation: borderFlow 1.2s linear infinite;
+}
+@keyframes borderFlow {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+/* small helper for the header shrink */
+.header-shrink {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  transition: padding 0.28s ease;
+}
+
+/* responsive tweaks for hero */
+.hero-content { 
+  z-index: 10; 
+}
+
+/* Evitar que el header tape el scroll hacia los anchors */
+[id] {
+  scroll-margin-top: 96px;
+}
+
