@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Logo from "D:/10. Pagina web/rux-construcciones/src/assets/logo dorado def 3.png";
+import Logo from "../assets/logo dorado def 3.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { MobileMenu } from "./MobileMenu";
